@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Currencies>
+  <ConversionUri>https://api.coinmarketcap.com/v2/ticker/2041/?convert=</ConversionUri>
+  <Currency>
+    <Name>Australian Dollar</Name>
+    <Code>AUD</Code>
+  </Currency>
+  <Currency>
+    <Name>Brazilian Real</Name>
+    <Code>BRL</Code>
+  </Currency>
+  <Currency>
+    <Name>Canadian Dollar</Name>
+    <Code>CAD</Code>
+  </Currency>
+  <Currency>
+    <Name>Swiss Franc</Name>
+    <Code>CHF</Code>
+  </Currency>
+  <Currency>
+    <Name>Chilean Peso</Name>
+    <Code>CLP</Code>
+  </Currency>
+  <Currency>
+    <Name>Yuan Renminbi</Name>
+    <Code>CNY</Code>
+  </Currency>
+  <Currency>
+    <Name>Czech Koruna</Name>
+    <Code>CZK</Code>
+  </Currency>
+  <Currency>
+    <Name>Danish Krone</Name>
+    <Code>DKK</Code>
+  </Currency>
+  <Currency>
+    <Name>Euro</Name>
+    <Code>EUR</Code>
+  </Currency>
+  <Currency>
+    <Name>Pound Sterling</Name>
+    <Code>GBP</Code>
+  </Currency>
+  <Currency>
+    <Name>Hong Kong Dollar</Name>
+    <Code>HKD</Code>
+  </Currency>
+  <Currency>
+    <Name>Forint</Name>
+    <Code>HUF</Code>
+  </Currency>
+  <Currency>
+    <Name>Rupiah</Name>
+    <Code>IDR</Code>
+  </Currency>
+  <Currency>
+    <Name>New Israeli Sheqel</Name>
+    <Code>ILS</Code>
+  </Currency>
+  <Currency>
+    <Name>Indian Rupee</Name>
+    <Code>INR</Code>
+  </Currency>
+  <Currency>
+    <Name>Yen</Name>
+    <Code>JPY</Code>
+  </Currency>
+  <Currency>
+    <Name>Won</Name>
+    <Code>KRW</Code>
+  </Currency>
+  <Currency>
+    <Name>Mexican Peso</Name>
+    <Code>MXN</Code>
+  </Currency>
+  <Currency>
+    <Name>Malaysian Ringgit</Name>
+    <Code>MYR</Code>
+  </Currency>
+  <Currency>
+    <Name>Norwegian Krone</Name>
+    <Code>NOK</Code>
+  </Currency>
+  <Currency>
+    <Name>New Zealand Dollar</Name>
+    <Code>NZD</Code>
+  </Currency>
+  <Currency>
+    <Name>Philippine Peso</Name>
+    <Code>PHP</Code>
+  </Currency>
+  <Currency>
+    <Name>Pakistan Rupee</Name>
+    <Code>PKR</Code>
+  </Currency>
+  <Currency>
+    <Name>Zloty</Name>
+    <Code>PLN</Code>
+  </Currency>
+  <Currency>
+    <Name>Russian Ruble</Name>
+    <Code>RUB</Code>
+  </Currency>
+  <Currency>
+    <Name>Swedish Krona</Name>
+    <Code>SEK</Code>
+  </Currency>
+  <Currency>
+    <Name>Singapore Dollar</Name>
+    <Code>SGD</Code>
+  </Currency>
+  <Currency>
+    <Name>Baht</Name>
+    <Code>THB</Code>
+  </Currency>
+  <Currency>
+    <Name>Turkish Lira</Name>
+    <Code>TRY</Code>
+  </Currency>
+  <Currency>
+    <Name>New Taiwan Dollar</Name>
+    <Code>TWD</Code>
+  </Currency>
+  <Currency>
+    <Name>US Dollar</Name>
+    <Code>USD</Code>
+  </Currency>
+  <Currency>
+    <Name>Rand</Name>
+    <Code>ZAR</Code>
+  </Currency>
+  <Currency>
+    <Name>Bitcoin</Name>
+    <Code>BTC</Code>
+  </Currency>
+  <Currency>
+    <Name>Ethereum</Name>
+    <Code>ETH</Code>
+  </Currency>
+  <Currency>
+    <Name>Ripple</Name>
+    <Code>XRP</Code>
+  </Currency>
+  <Currency>
+    <Name>LiteCoin</Name>
+    <Code>LTC</Code>
+  </Currency>
+  <Currency>
+    <Name>Bitcoin Cash</Name>
+    <Code>BCH</Code>
+  </Currency>
+</Currencies>

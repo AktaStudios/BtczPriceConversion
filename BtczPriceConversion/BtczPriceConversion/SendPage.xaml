@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BtczPriceConversion.SendPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="8*"/>
+                </Grid.RowDefinitions>
+                <Image Aspect="AspectFit"  Source="btcz.png" Grid.Row="0" Grid.Column="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                
+                <StackLayout Grid.Row="1" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="0" Spacing="1">
+
+                    <Label Text="Select a Contact Or Enter a Btcz or Btcz.Me Address and Click Send" FontSize="Small" HorizontalOptions="CenterAndExpand"/>
+
+                    <SearchBar x:Name="contactSearchBar" Placeholder="Enter Btcz or Btcz.Me Address" Grid.Row="1" Grid.Column="0" TextChanged="SearchBar_TextChanged" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" FontSize="Micro" Focused="contactSearchBar_Focused"/>
+
+                    <ListView x:Name="contactList" Margin="5,0,5,0">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <ViewCell.View>
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition/>
+                                            </Grid.ColumnDefinitions>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition  />
+                                            </Grid.RowDefinitions>
+
+                                            <Label Grid.Column="0" Grid.Row="0" Text="{Binding Name}"></Label>
+                                        </Grid>
+                                    </ViewCell.View>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+                    <Button x:Name="sendButton" Text="SEND" HorizontalOptions="CenterAndExpand" Clicked="sendButton_Clicked"/>
+                </StackLayout>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

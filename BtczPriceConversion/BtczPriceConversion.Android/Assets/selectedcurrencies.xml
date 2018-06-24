@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Currencies>
+  <ConversionUri>https://api.coinmarketcap.com/v2/ticker/2041/?convert=</ConversionUri>
+  <Currency>
+    <Name>Bitcoin</Name>
+    <Code>BTC</Code>
+    <ConversionUri>https://api.coinmarketcap.com/v2/ticker/2041/?convert=</ConversionUri>
+  </Currency>
+  <Currency>
+    <Name>US Dollar</Name>
+    <Code>USD</Code>
+    <ConversionUri>https://api.coinmarketcap.com/v2/ticker/2041/?convert=</ConversionUri>
+  </Currency>  
+</Currencies>

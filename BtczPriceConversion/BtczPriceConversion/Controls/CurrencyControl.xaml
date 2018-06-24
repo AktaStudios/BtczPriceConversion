@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Grid xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BtczPriceConversion"
+             x:Class="BtczPriceConversion.Controls.CurrencyControl" Margin="0,0,0,0" ColumnSpacing="3">
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="2*"/>
+        <ColumnDefinition Width="6*"/>
+        <ColumnDefinition Width="5*"/>
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    
+    <Image x:Name="removeButton" Source="removeBtcz.png" Margin="5,0,0,0"  Grid.Row="0" Grid.Column="0" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand"  Aspect="AspectFit" HeightRequest="35"/>
+
+    <StackLayout Orientation="Vertical" Grid.Row="0" Grid.Column="1" Spacing="0" Padding="0">
+
+        <Label x:Name="currencyCode" FontAttributes="Bold" Margin="0,0,0,0"  FontSize="Small" VerticalOptions="End"/>
+        <Label x:Name="currencyName" FontAttributes="Bold" Margin="0,0,0,0"  FontSize="Micro" VerticalOptions="Start"/>
+
+    </StackLayout>
+
+        <!--<Entry x:Name="currencyAmount" Text="{Binding CurrencyAmount}" Margin="0,0,5,0" Grid.Row="0" Grid.Column="2" FontSize="Micro" Placeholder="Enter Amount" TextChanged="Entry_TextChanged" Keyboard="Numeric" Completed="currencyAmount_Completed" 
+           VerticalOptions="Start" HorizontalOptions="FillAndExpand"/>-->
+
+    <StackLayout Orientation="Vertical" Grid.Row="0" Grid.Column="2" Spacing="0" Padding="0">
+
+        <Entry x:Name="currencyAmount" Text="{Binding CurrencyAmount}" Margin="0,0,5,0" FontSize="Micro" Placeholder="Enter Amount..." TextChanged="Entry_TextChanged" Keyboard="Numeric" Completed="currencyAmount_Completed" 
+           VerticalOptions="Start" HorizontalOptions="EndAndExpand"/>
+        <Label x:Name="currencyRate" FontAttributes="Bold" Margin="0,0,0,0" FontSize="6" VerticalOptions="Start" Text="{Binding CurrencyRate}" />
+
+        <Grid Margin="0,0,0,0" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand" RowSpacing="0" Padding="0" ColumnSpacing="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Button x:Name="sendButton" Text="Send"  IsVisible="False" FontSize="5" Margin="0,0,0,0" Grid.Row="0" Grid.Column="0" Clicked="sendButton_Clicked"/>
+            <Button x:Name="receiveButton" Text="Receive"  IsVisible="False" FontSize="5" Margin="0,0,0,0" Grid.Row="0" Grid.Column="1" Clicked="receiveButton_Clicked"/>
+        </Grid>
+
+    </StackLayout>
+
+</Grid>
+

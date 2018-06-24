@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BtczPriceConversion.CurrencySelectPage"
+             x:Name="CurrencyPage"
+             Title = "Select Currency">
+    <ContentPage.Content>
+        
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="6*"/>
+                </Grid.RowDefinitions>
+                <Image Aspect="AspectFit"  Source="btcz.png" Grid.Row="0" Grid.Column="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                <SearchBar Placeholder="Search Currency" Grid.Row="1" Grid.Column="0" TextChanged="SearchBar_TextChanged" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
+                <Label Text="Select Currency"  Grid.Row="2" Grid.Column="0" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"/>
+                <ListView x:Name="currencyList" ItemTapped="currencyList_ItemTapped" Margin="5,0,5,0" Grid.Row="3">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.View>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition    />
+                                        </Grid.RowDefinitions>
+
+                                        <Label Grid.Column="0" Grid.Row="0" Text="{Binding Code}"></Label>
+                                        <Label Grid.Column="1" Grid.Row="0" Text="{Binding Name}"></Label>
+                                    </Grid>
+                                </ViewCell.View>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+
+           
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

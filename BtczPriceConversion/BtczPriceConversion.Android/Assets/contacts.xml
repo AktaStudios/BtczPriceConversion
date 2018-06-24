@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Contacts>
+  <Contact>
+    <Name>Akta86</Name>
+    <BtczMeAddress>https://btcz.me/Akta86</BtczMeAddress>
+    <BtczAddress>t1ShY9WZhePe29znStcQjsgek6dtHkHy8gz</BtczAddress>
+    <EmailAddress>aktastudios@gmail.com</EmailAddress>
+  </Contact>
+  <Contact>
+    <Name>BitcoinZ Community (Donations)</Name>
+    <BtczMeAddress>https://btcz.me/donate</BtczMeAddress>
+    <BtczAddress>t1fHHnAXxoPWGY77sG5Zw2sFfGUTpW6BcSZ</BtczAddress>
+    <EmailAddress></EmailAddress>
+  </Contact>
+  
+</Contacts>

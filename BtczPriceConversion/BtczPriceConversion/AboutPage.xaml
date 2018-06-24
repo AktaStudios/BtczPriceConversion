@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BtczPriceConversion.AboutPage"  x:Name="aboutPage" Title = "About">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="6*"/>
+                </Grid.RowDefinitions>
+                <Image Aspect="AspectFit"  Source="btcz.png" Grid.Row="0" Grid.Column="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+
+                <StackLayout Grid.Row="1" Grid.RowSpan="3" Grid.Column="0">
+                    <Label Text="Created by Akta86 for the BitcoinZ community."/>
+                    <Label Text="Like my app? Donate me some BTCZ:"/>
+                    <Label Text="t1ShY9WZhePe29znStcQjsgek6dtHkHy8gz"/>
+                    <Label Text="App feedback can be sent to me via discord: Akta86#0099"/>
+                    <Label Text="or email: AktaStudios@gmail.com"/>
+                    <Label Text="All data powered by www.CoinMarketCap.com "/>
+                </StackLayout>
+
+            </Grid>
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
