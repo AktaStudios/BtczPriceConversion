@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -87,7 +88,7 @@ namespace BtczPriceConversion
         {
             try
             {
-                Device.OpenUri(new Uri(String.Format("bitcoinz:{0}?amount={1}", address, amountToSend)));
+                Device.OpenUri(new Uri(String.Format("bitcoinz:{0}?amount={1}", address, Double.Parse(amountToSend, NumberStyles.Any, CultureInfo.InvariantCulture).ToString())));
             }
             catch
             {

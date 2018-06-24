@@ -18,7 +18,7 @@
 
                     <Label Text="Select a Contact Or Enter a Btcz or Btcz.Me Address and Click Send" FontSize="Small" HorizontalOptions="CenterAndExpand"/>
 
-                    <SearchBar x:Name="contactSearchBar" Placeholder="Enter Btcz or Btcz.Me Address" Grid.Row="1" Grid.Column="0" TextChanged="SearchBar_TextChanged" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" FontSize="Micro" Focused="contactSearchBar_Focused"/>
+                    <SearchBar x:Name="contactSearchBar" Placeholder="Enter Btcz or Btcz.Me Address" TextChanged="SearchBar_TextChanged" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" FontSize="Micro" Focused="contactSearchBar_Focused" HeightRequest="45"/>
 
                     <ListView x:Name="contactList" Margin="5,0,5,0">
                         <ListView.ItemTemplate>
